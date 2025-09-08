@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #6a62b3cb;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.text{
+  font-size: 34px;
+  font-weight: bolder;
+  min-width: 200px;
+  color: ;
+}
+.text span{
+  position: relative;
+}
+.text span::before{
+  content: "youtuber";
+  color: #3a3473cb;
+  animation: words 5.6s infinite;
+}
+.text span::after{
+  content: "";
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  background-color:;
+  border-left: 2px solid  #6a62b3cb;
+  right: -15px;
+  animation: cursor 0.3s infinite, typing step(14) infinite;
+}
+@keyframes cursor{
+  to{
+      border-left: 2px solid red;
+  }
+}
+@keyframes words{
+  0%, 20%{
+    content: "youtuber";
+    color: white;
+  }
+    21%, 40%{
+    content: "blogger";
+    color:yellow;
+  }
+    41%, 60%{
+    content: "developer";
+    color: red;
+  }
+    61%, 80%{
+    content: "designer";
+    color: blue;
+  }
+    81%, 100%{
+    content: "sulaiman";
+    color: green;
+  }
+}
